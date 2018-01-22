@@ -1,14 +1,17 @@
 About pkginfo
 =============
 
-Home: https://pypi.python.org/pypi/pkginfo/
+Home: https://code.launchpad.net/~tseaver/pkginfo/trunk
 
-Package license: PSF
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
 Summary: Query metadatdata from sdists / bdists / installed packages.
 
+This package provides an API for querying the distutils metadata written in
+the ``PKG-INFO`` file inside a source distriubtion (an ``sdist``) or
+a binary distribution (e.g., created by running ``bdist_egg``)
 
 
 Current build status
@@ -66,6 +69,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
