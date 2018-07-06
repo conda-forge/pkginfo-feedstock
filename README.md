@@ -17,14 +17,15 @@ a binary distribution (e.g., created by running ``bdist_egg``)
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pkginfo-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pkginfo-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pkginfo-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pkginfo-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pkginfo-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pkginfo-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pkginfo-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pkginfo-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pkginfo/badges/version.svg)](https://anaconda.org/conda-forge/pkginfo)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pkginfo/badges/downloads.svg)](https://anaconda.org/conda-forge/pkginfo)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pkginfo-green.svg)](https://anaconda.org/conda-forge/pkginfo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pkginfo.svg)](https://anaconda.org/conda-forge/pkginfo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pkginfo.svg)](https://anaconda.org/conda-forge/pkginfo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pkginfo.svg)](https://anaconda.org/conda-forge/pkginfo) |
 
 Installing pkginfo
 ==================
