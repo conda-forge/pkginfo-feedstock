@@ -7,8 +7,6 @@ package:
 source:
   url: https://pypi.io/packages/source/p/pkginfo/pkginfo-{{ version }}.tar.gz
   sha256: 7424f2c8511c186cd5424bbf31045b77435b37a8d604990b79d4e70d741148bb
-  patches:
-    - missing_changelog.patch
 
 build:
   noarch: python
