@@ -9,7 +9,7 @@ source:
   sha256: 7424f2c8511c186cd5424bbf31045b77435b37a8d604990b79d4e70d741148bb
 
 build:
-  noarch: python
+#   noarch: python
   number: 0
   entry_points:
     - pkginfo = pkginfo.commandline:main
