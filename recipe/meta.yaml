@@ -1,4 +1,4 @@
-{% set version = "1.5.0.1" %}
+{% set version = "1.6.0" %}
 
 package:
   name: pkginfo
@@ -6,14 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pkginfo/pkginfo-{{ version }}.tar.gz
-  sha256: 7424f2c8511c186cd5424bbf31045b77435b37a8d604990b79d4e70d741148bb
+  sha256: dd008e95b13141ddd05d7e8881f0c0366a998ab90b25c2db794a1714b71583cc
 
 build:
   noarch: python
   number: 0
   entry_points:
     - pkginfo = pkginfo.commandline:main
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
