@@ -1,4 +1,4 @@
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 
 package:
   name: pkginfo
@@ -6,28 +6,31 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pkginfo/pkginfo-{{ version }}.tar.gz
-  sha256: 65175ffa2c807220673a41c371573ac9a1ea1b19ffd5eef916278f428319934f
+  sha256: 542e0d0b6750e2e21c20179803e40ab50598d8066d51097a0e382cba9eb02bff
 
 build:
   noarch: python
   number: 0
   entry_points:
     - pkginfo = pkginfo.commandline:main
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
+    - python >=3.6
 
 test:
   imports:
     - pkginfo
     - pkginfo.tests
   commands:
+    - pip check
     - pkginfo --help
+  requires:
+    - pip
 
 about:
   home: https://code.launchpad.net/~tseaver/pkginfo/trunk
