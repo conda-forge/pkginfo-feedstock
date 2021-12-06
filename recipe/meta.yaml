@@ -13,21 +13,24 @@ build:
   number: 0
   entry_points:
     - pkginfo = pkginfo.commandline:main
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
+    - python >=3.6
 
 test:
   imports:
     - pkginfo
     - pkginfo.tests
   commands:
+    - pip check
     - pkginfo --help
+  requires:
+    - pip
 
 about:
   home: https://code.launchpad.net/~tseaver/pkginfo/trunk
