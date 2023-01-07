@@ -1,4 +1,4 @@
-{% set version = "1.9.4" %}
+{% set version = "1.9.5" %}
 
 package:
   name: pkginfo
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pkginfo/pkginfo-{{ version }}.tar.gz
-  sha256: e769fd353593d43e0c9f47e17e25f09a8efcddcdf9a71674ea3ba444ff31bb44
+  sha256: 14ac884f19ef50abfce74b2793394903b3e2901e759908237ba5e18ca9d7524b
 
 build:
   noarch: python
