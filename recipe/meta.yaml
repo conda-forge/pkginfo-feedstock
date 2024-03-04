@@ -1,26 +1,27 @@
+{% set name = "pkginfo" %}
 {% set version = "1.10.0" %}
 
 package:
-  name: pkginfo
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pkginfo/pkginfo-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pkginfo-{{ version }}.tar.gz
   sha256: 5df73835398d10db79f8eecd5cd86b1f6d29317589ea70796994d49399af6297
 
 build:
-  noarch: python
-  number: 0
   entry_points:
     - pkginfo = pkginfo.commandline:main
-  script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
