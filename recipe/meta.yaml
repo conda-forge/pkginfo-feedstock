@@ -1,5 +1,5 @@
 {% set name = "pkginfo" %}
-{% set version = "1.11.1" %}
+{% set version = "1.11.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pkginfo-{{ version }}.tar.gz
-  sha256: 2e0dca1cf4c8e39644eed32408ea9966ee15e0d324c62ba899a393b3c6b467aa
+  sha256: c6bc916b8298d159e31f2c216e35ee5b86da7da18874f879798d0a1983537c86
 
 build:
   entry_points:
@@ -20,6 +20,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     - python >=3.8
 
