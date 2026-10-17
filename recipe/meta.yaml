@@ -1,5 +1,5 @@
 {% set name = "pkginfo" %}
-{% set version = "1.13.1" %}
+{% set version = "1.13.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pkginfo-{{ version }}.tar.gz
-  sha256: 679f51a29a8550e9eecdfab3ec1619d42e2e75c20a2a200289963ac428667657
+  sha256: ad74cc8184b28b77b06cccc49361fd0fdc56fd87e307425ce1c2b7596dbe3185
 
 build:
   entry_points:
