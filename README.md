@@ -3,20 +3,13 @@ About pkginfo-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pkginfo-feedstock/blob/main/LICENSE.txt)
 
-Home: https://code.launchpad.net/~tseaver/pkginfo/trunk
+Home: https://pypi.org/project/pkginfo/
 
 Package license: MIT
 
-Summary: Query metadatdata from sdists / bdists / installed packages.
+Summary: Query metadata from sdists / bdists / installed packages
 
-Development: https://code.launchpad.net/~tseaver/pkginfo/trunk
-
-Documentation: http://pythonhosted.org/pkginfo/
-
-This package provides an API for querying the distutils metadata written in
-the ``PKG-INFO`` file inside a source distriubtion (an ``sdist``) or
-a binary distribution (e.g., created by running ``bdist_egg``)
-
+Documentation: https://tseaver.github.io/pkginfo
 
 Current build status
 ====================
@@ -131,6 +124,7 @@ mamba repoquery depends pkginfo --channel conda-forge
 </details>
 
 
+
 About conda-forge
 =================
 
@@ -145,9 +139,7 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
-[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+[Azure](https://azure.microsoft.com/en-us/services/devops/) and [GitHub](https://github.com/)
 it is possible to build and upload installable packages to the
 [conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
