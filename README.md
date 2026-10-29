@@ -3,20 +3,13 @@ About pkginfo-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pkginfo-feedstock/blob/main/LICENSE.txt)
 
-Home: https://code.launchpad.net/~tseaver/pkginfo/trunk
+Home: https://pypi.org/project/pkginfo/
 
 Package license: MIT
 
-Summary: Query metadatdata from sdists / bdists / installed packages.
+Summary: Query metadata from sdists / bdists / installed packages
 
-Development: https://code.launchpad.net/~tseaver/pkginfo/trunk
-
-Documentation: http://pythonhosted.org/pkginfo/
-
-This package provides an API for querying the distutils metadata written in
-the ``PKG-INFO`` file inside a source distriubtion (an ``sdist``) or
-a binary distribution (e.g., created by running ``bdist_egg``)
-
+Documentation: https://tseaver.github.io/pkginfo
 
 Current build status
 ====================
